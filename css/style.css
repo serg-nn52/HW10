@@ -829,8 +829,14 @@ footer p {
 		position: absolute;
 		margin-left: 25px;
 		margin-top: 40px;
+		margin-right: 10px;
 		width: 150px;
 		z-index: 100;
+		}
+
+		header .bottom_header .show li {
+		background-color: white;
+    	margin-left: 10px;
 		}
 	
 
