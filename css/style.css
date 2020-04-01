@@ -152,8 +152,11 @@ height: calc(100vh - 150px);
 /* padding-top: 228px; */
 padding-top: 0;
 box-sizing: border-box;
+/* min-height: 500px; */
 } 
-
+.d-block {
+	min-height: 500px;
+}
 .carousel-item img {
 	object-fit: cover;
 	height: calc(100vh - 150px); 
@@ -743,6 +746,7 @@ form input {
 	font-family: 'Open Sans', sans-serif;
 	font-size: 16px;
 	box-shadow: 0 0 15px 5px rgba(0, 0, 0, 0.2);
+	outline: none;
 }
 
 form button {
@@ -757,6 +761,7 @@ form button {
 	font-weight: bold;
 	font-size: 18px;
 	margin-left: -240px;
+	outline: none;
 }
 form button:hover {
 	background-color:#ffffff;
@@ -837,6 +842,9 @@ footer p {
 		width: 90%;
 		align-items: flex-start;
 	}
+	header .bottom_header .flex_header{
+		position: relative;
+	}
 
 	header .bottom_header .menu {
 		display: none;
@@ -891,7 +899,14 @@ footer p {
 	}
 	header .bottom_header nav {
 		order: 2;
+		
 	}
+	header .bottom_header .search {
+		position: absolute;
+		right: 60px;
+	}
+
+
 	header .bottom_header .burger i{
 		width: 20px;
 		height: 4px;
@@ -976,6 +991,9 @@ footer p {
 	.container2 .flex_c2 h1 {
 		font-size: 64px;
 	}
+	.container2, .carousel-item {
+		min-height: 500px;
+	}
 
 }
 
@@ -1024,7 +1042,12 @@ footer p {
 	.container6 .grid_c6 {
 		gap: 30px;
 	}
-
+	.container2 .flex_c2 h1 {
+		font-size: 62px;
+		text-align: center;
+		line-height: 1;
+		margin-top: 40px;
+	}
 
 }
 
@@ -1059,6 +1082,10 @@ footer p {
 		font-size: 14px;
 		padding: 15px 40px;
 	}
+	.container2, .carousel-item {
+		min-height: 500px;
+	}
+ 
 
 }
 
@@ -1165,5 +1192,14 @@ header .bottom_header a {
 	}
 	.container4 .item h5 {
 		margin-left: 17px;
+	}
+	.d-block {
+		min-height: 400px;
+	}
+	.container2 {
+		min-height: 450px;
+	}
+	.container2, .carousel-item {
+		min-height: 300px;
 	}
 }
